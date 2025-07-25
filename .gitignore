@@ -1,2 +1,8 @@
+# General
 .env
+
+# Node.js
+node_modules
+
+# Claude Code
 .ccode

@@ -1,0 +1,7 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "@anthropic-ai/claude-code": "^1.0.61",
+    "turbo": "^2.5.5"
+  }
+}
