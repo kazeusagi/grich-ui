@@ -1,0 +1,27 @@
+{
+  "name": "Grich UI",
+  "image": "debian:bookworm-slim",
+  "runArgs": [
+    "--env-file",
+    ".devcontainer/.env"
+  ],
+  "remoteUser": "user",
+  "workspaceFolder": "/home/user/app",
+  "initializeCommand": ".devcontainer/initializeCommand.sh", // 初期化コマンド
+  "postCreateCommand": ".devcontainer/postCreateCommand.sh", // 起動時コマンド
+  "mounts": [
+    "source=${localWorkspaceFolder},target=${containerWorkspaceFolder},type=bind", // ワークスペース
+    "source=${localWorkspaceFolder}/.ccode/.claude,target=/home/user/.claude,type=bind", // claude
+    "source=${localWorkspaceFolder}/.ccode/.claude.json,target=/home/user/.claude.json,type=bind" // claude settings json
+  ],
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "username": "user"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  }
+}
