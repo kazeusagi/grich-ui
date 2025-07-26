@@ -1,19 +1,18 @@
 {
-  "name": "Grich UI",
-  // "image": "debian:bookworm-slim",
-  "image": "node:20-bookworm-slim",
+  "name": "Package Template",
+  "image": "debian:bookworm-slim",
   "runArgs": [
     "--env-file",
     ".devcontainer/.env"
   ],
-  "remoteUser": "node",
-  "workspaceFolder": "/home/node/app",
+  "remoteUser": "user",
+  "workspaceFolder": "/home/user/app",
   "initializeCommand": ".devcontainer/initializeCommand.sh", // 初期化コマンド
   "postCreateCommand": ".devcontainer/postCreateCommand.sh", // 起動時コマンド
   "mounts": [
     "source=${localWorkspaceFolder},target=${containerWorkspaceFolder},type=bind", // ワークスペース
-    "source=${localWorkspaceFolder}/.ccode/.claude,target=/home/node/.claude,type=bind", // claude
-    "source=${localWorkspaceFolder}/.ccode/.claude.json,target=/home/node/.claude.json,type=bind" // claude settings json
+    "source=${localWorkspaceFolder}/.ccode/.claude,target=/home/user/.claude,type=bind", // claude
+    "source=${localWorkspaceFolder}/.ccode/.claude.json,target=/home/user/.claude.json,type=bind" // claude settings json
   ],
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {
