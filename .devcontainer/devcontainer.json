@@ -19,7 +19,12 @@
   },
   "customizations": {
     "vscode": {
-      "extensions": []
+      "extensions": [
+        "biomejs.biome",
+        "oderwat.indent-rainbow",
+        "wix.vscode-import-cost",
+        "oven.bun-vscode"
+      ]
     }
   }
 }
