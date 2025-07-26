@@ -6,3 +6,9 @@ node_modules
 
 # Claude Code
 .ccode
+
+# Turborepo
+.turbo
+
+*storybook.log
+storybook-static
