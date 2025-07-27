@@ -10,5 +10,6 @@ node_modules
 # Turborepo
 .turbo
 
-*storybook.log
-storybook-static
+# Build output
+dist
+build
