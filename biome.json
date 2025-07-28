@@ -18,6 +18,13 @@
       "recommended": true,
       "suspicious": {
         "noExplicitAny": "info"
+      },
+      "correctness": {
+        "noUnusedImports": {
+          "level": "warn",
+          "fix": "safe",
+          "options": {}
+        }
       }
     }
   },
