@@ -2,12 +2,13 @@
 
 type Props = {
   label: string;
+  color?: string;
   onClick?: () => void;
 };
 
-export function Button({ label, onClick }: Props) {
+export function Button({ label, color, onClick }: Props) {
   return (
-    <button type="button" onClick={onClick}>
+    <button type="button" style={{ color }} onClick={onClick}>
       {label}
     </button>
   );

@@ -1,3 +1,12 @@
-export function Text({ children }: { children: React.ReactNode }) {
-  return <p style={{ fontSize: '16px', color: '#333' }}>{children}</p>;
+'use client';
+
+import type { ReactNode } from 'react';
+
+type Props = {
+  children: ReactNode;
+  color?: string;
+};
+
+export function Text({ children, color }: Props) {
+  return <p style={{ color }}>{children}</p>;
 }

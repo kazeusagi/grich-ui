@@ -17,3 +17,11 @@ export const Default: Story = {
     onClick: () => alert('Button clicked!'),
   },
 };
+
+export const Red: Story = {
+  args: {
+    label: 'Click Me',
+    color: 'red',
+    onClick: () => alert('Button clicked!'),
+  },
+};

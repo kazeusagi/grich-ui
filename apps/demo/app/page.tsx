@@ -1,7 +1,7 @@
 'use client';
 
 import Image, { type ImageProps } from 'next/image';
-import { Button, Text } from 'ui-package';
+import { Button } from 'ui-package';
 import styles from './page.module.css';
 
 type Props = Omit<ImageProps, 'src'> & {
@@ -23,9 +23,9 @@ const ThemeImage = (props: Props) => {
 export default function Home() {
   return (
     <div className={styles.page}>
-      <Button label="atexa" onClick={() => {}} />
-      <Text>a</Text>
       <main className={styles.main}>
+        <Text color="red">Text</Text>
+        <Button label="Button" color="red" onClick={() => {}} />
         <ThemeImage
           className={styles.logo}
           srcLight="turborepo-dark.svg"

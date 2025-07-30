@@ -20,7 +20,7 @@
     "build": "vite build && tsc -b",
     "build:sb": "storybook build"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
@@ -28,12 +28,14 @@
     "@repo/typescript-config": "*",
     "@storybook/addon-a11y": "^9.0.18",
     "@storybook/addon-docs": "^9.0.18",
-    "@storybook/react-vite": "9.0.18",
+    "@storybook/react-vite": "^9.0.18",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react-swc": "^3.10.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "storybook": "^9.0.18",
-    "typescript": "~5.8.3",
+    "typescript": "^5.8.3",
     "vite": "^7.0.4"
   }
 }
