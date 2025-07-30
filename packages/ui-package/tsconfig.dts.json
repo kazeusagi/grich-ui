@@ -1,0 +1,9 @@
+{
+  "extends": "@repo/typescript-config/vite.dts.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.dts.tsbuildinfo",
+    "declarationDir": "./dist/types"
+  },
+  "include": ["src/*/*.tsx"],
+  "exclude": ["**/*.stories.tsx"]
+}

@@ -2,7 +2,7 @@
   "name": "monorepo",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
+    "build": "turbo run build --force --filter *-package",
     "dev": "turbo run dev",
     "lint": "biome check",
     "format": "biome format",
