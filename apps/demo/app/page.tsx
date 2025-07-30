@@ -1,4 +1,6 @@
 import Image, { type ImageProps } from 'next/image';
+// import { Button } from 'ui-package';
+import { Button } from 'ui-package';
 import styles from './page.module.css';
 
 type Props = Omit<ImageProps, 'src'> & {
@@ -20,6 +22,7 @@ const ThemeImage = (props: Props) => {
 export default function Home() {
   return (
     <div className={styles.page}>
+      <Button></Button>
       <main className={styles.main}>
         <ThemeImage
           className={styles.logo}

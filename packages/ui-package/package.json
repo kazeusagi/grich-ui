@@ -1,11 +1,23 @@
 {
   "name": "ui-package",
-  "private": true,
   "version": "0.0.0",
+  "private": false,
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.umd.js",
+      "import": "./dist/index.es.js"
+    }
+  },
   "scripts": {
     "dev": "concurrently 'vite --port 3001 --host' 'storybook dev -p 6006 --no-open'",
-    "build": "tsc -b && vite build && storybook build",
+    "build": "tsc -b && vite build",
+    "build:sb": "storybook build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -13,6 +25,7 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@repo/typescript-config": "*",
     "@storybook/addon-a11y": "^9.0.18",
     "@storybook/addon-docs": "^9.0.18",
     "@storybook/react-vite": "9.0.18",
