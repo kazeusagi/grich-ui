@@ -25,7 +25,7 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@repo/typescript-config": "*",
+    "@repo/tsconfig": "*",
     "@storybook/addon-a11y": "^9.0.18",
     "@storybook/addon-docs": "^9.0.18",
     "@storybook/react-vite": "^9.0.18",
