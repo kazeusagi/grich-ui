@@ -38,7 +38,11 @@
         "typescript": "^5.8.2",
       },
     },
-    "packages/common-package": {
+    "packages/blank-package": {
+      "name": "@kazeusagi/blank-package",
+      "version": "0.0.0",
+    },
+    "packages/my-common-package": {
       "name": "common-package",
       "version": "0.0.0",
       "dependencies": {
@@ -54,11 +58,7 @@
         "vite": "^7.0.4",
       },
     },
-    "packages/tsconfig": {
-      "name": "@repo/tsconfig",
-      "version": "0.0.0",
-    },
-    "packages/ui-package": {
+    "packages/my-ui-package": {
       "name": "ui-package",
       "version": "0.0.0",
       "devDependencies": {
@@ -79,6 +79,10 @@
         "react": "^19.1.0",
         "react-dom": "^19.1.0",
       },
+    },
+    "packages/tsconfig": {
+      "name": "@repo/tsconfig",
+      "version": "0.0.0",
     },
   },
   "packages": {
@@ -275,6 +279,8 @@
     "@jridgewell/sourcemap-codec": ["@jridgewell/sourcemap-codec@1.5.4", "", {}, "sha512-VT2+G1VQs/9oz078bLrYbecdZKs912zQlkelYpuf+SXF+QvZDYJlbx/LSx+meSAwdDFnF8FVXW92AVjjkVmgFw=="],
 
     "@jridgewell/trace-mapping": ["@jridgewell/trace-mapping@0.3.29", "", { "dependencies": { "@jridgewell/resolve-uri": "^3.1.0", "@jridgewell/sourcemap-codec": "^1.4.14" } }, "sha512-uw6guiW/gcAGPDhLmd77/6lW8QLeiV5RUTsAX46Db6oLhGaVj4lhnPwb184s1bkc8kdVg/+h988dro8GRDpmYQ=="],
+
+    "@kazeusagi/blank-package": ["@kazeusagi/blank-package@workspace:packages/blank-package"],
 
     "@mdx-js/react": ["@mdx-js/react@3.1.0", "", { "dependencies": { "@types/mdx": "^2.0.0" }, "peerDependencies": { "@types/react": ">=16", "react": ">=16" } }, "sha512-QjHtSaoameoalGnKDT3FoIl4+9RwyTmo9ZJGBdLOks/YOiWHoRDI3PUwEzOE7kEmGcV3AFcp9K6dYu9rEuKLAQ=="],
 
@@ -502,7 +508,7 @@
 
     "color-string": ["color-string@1.9.1", "", { "dependencies": { "color-name": "^1.0.0", "simple-swizzle": "^0.2.2" } }, "sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg=="],
 
-    "common-package": ["common-package@workspace:packages/common-package"],
+    "common-package": ["common-package@workspace:packages/my-common-package"],
 
     "convert-source-map": ["convert-source-map@1.9.0", "", {}, "sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A=="],
 
@@ -784,7 +790,7 @@
 
     "typescript": ["typescript@5.8.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ=="],
 
-    "ui-package": ["ui-package@workspace:packages/ui-package"],
+    "ui-package": ["ui-package@workspace:packages/my-ui-package"],
 
     "undici-types": ["undici-types@6.21.0", "", {}, "sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ=="],
 
